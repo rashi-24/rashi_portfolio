@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rashi Sharma | AI/ML & Full-Stack Developer</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        /* Custom scrollbar for aesthetics */
+        body::-webkit-scrollbar { width: 8px; }
+        body::-webkit-scrollbar-track { background: #1f2937; /* Dark slate */ }
+        body::-webkit-scrollbar-thumb { background-color: #4f46e5; /* Indigo */ border-radius: 20px; }
+        /* Smooth scrolling for internal links */
+        html { scroll-behavior: smooth; }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 50%;
+            height: 3px;
+            background-color: #4f46e5; /* Indigo */
+            border-radius: 9999px;
+        }
+        /* Custom style for hover effect on project cards */
+        .project-card:hover .project-title {
+            color: #818cf8; /* Light Indigo */
+            transition: color 300ms;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200 font-sans">
+
+
+    <!-- NAVIGATION -->
+    <nav class="sticky top-0 z-50 bg-gray-900/90 backdrop-blur-sm shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="#" class="text-xl font-bold text-indigo-400">Rashi Sharma</a>
+                <div class="flex space-x-4">
+                    <a href="#about" class="text-gray-300 hover:text-indigo-400 transition">About</a>
+                    <a href="#skills" class="text-gray-300 hover:text-indigo-400 transition">Skills</a>
+                    <a href="#experience" class="text-gray-300 hover:text-indigo-400 transition">Experience</a>
+                    <a href="#projects" class="text-gray-300 hover:text-indigo-400 transition">Projects</a>
+                    <a href="#education" class="text-gray-300 hover:text-indigo-400 transition">Education</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <!-- HERO / ABOUT SECTION (Updated to vertical stack and center alignment) -->
+        <section id="about" class="flex flex-col items-center space-y-10 mb-20 pt-10">
+            
+            <!-- Profile Picture and Contact (Centered and given a max width) -->
+            <div class="w-full max-w-lg flex flex-col items-center p-6 bg-gray-800 rounded-xl shadow-2xl">
+                <!-- Static Placeholder Picture (R S initials) -->
+                <img id="profile-picture" class="w-40 h-40 object-cover rounded-full ring-4 ring-indigo-500 shadow-xl mb-6"
+                     src="pic.jpeg" alt="Profile Placeholder">
+                
+                <h1 class="text-3xl font-extrabold text-white text-center">Rashi Sharma</h1>
+                <p class="text-xl text-indigo-400 text-center mb-4">AI/ML & Full-Stack Developer</p>
+
+                <!-- Contact Links -->
+                <div class="space-y-3 text-center w-full">
+                    <a href="mailto:sharma.rashi2408@gmail.com" class="flex items-center justify-center text-gray-400 hover:text-white transition group">
+                        <i class="fas fa-envelope mr-3 text-indigo-400 group-hover:text-indigo-300"></i>
+                        sharma.rashi2408@gmail.com
+                    </a>
+                    <a href="tel:+14802773182" class="flex items-center justify-center text-gray-400 hover:text-white transition group">
+                        <i class="fas fa-phone mr-3 text-indigo-400 group-hover:text-indigo-300"></i>
+                        +1 (480) 277-3182
+                    </a>
+                    <a href="https://www.linkedin.com/in/rashi-sharma-679256211" target="_blank" class="flex items-center justify-center text-gray-400 hover:text-white transition group">
+                        <i class="fab fa-linkedin mr-3 text-indigo-400 group-hover:text-indigo-300"></i>
+                        LinkedIn Profile
+                    </a>
+                    <a href="https://github.com/rashi-24" target="_blank" class="flex items-center justify-center text-gray-400 hover:text-white transition group">
+                        <i class="fab fa-github mr-3 text-indigo-400 group-hover:text-indigo-300"></i>
+                        GitHub Profile
+                    </a>
+                </div>
+            </div>
+
+            <!-- Summary Text (Full width below the profile) -->
+            <div class="w-full p-6 bg-gray-800 rounded-xl shadow-2xl">
+                <h2 class="section-title text-2xl font-bold text-white mb-4">Professional Summary</h2>
+                <p class="text-lg text-gray-300 leading-relaxed">
+                    MS in Computer Science student at Arizona State University with 2 years of experience in full-stack web development. 
+                    Proficient in Java, SQL, and database management, coupled with specialized research experience in AI/ML, including 
+                    LLM fine-tuning and transformer models. Seeking a Summer 2026 Software Engineering or AI/ML internship to 
+                    leverage skills in creating scalable, high-performance applications.
+                </p>
+            </div>
+        </section>
+        
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="mb-20">
+            <h2 class="section-title text-3xl font-bold text-white">Technical Skills</h2>
+            <div class="space-y-6">
+                
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-semibold text-indigo-400 mb-3"><i class="fas fa-code mr-2"></i> Languages</h3>
+                    <p class="text-gray-300">Java, Python, JavaScript, C/C++, SQL, HTML, CSS</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-semibold text-indigo-400 mb-3"><i class="fas fa-cube mr-2"></i> Frameworks & Libraries</h3>
+                    <p class="text-gray-300">AngularJS, ReactJS, Node.js, Express.js, JSP, NumPy, Pandas, FastAPI, Flask</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-semibold text-indigo-400 mb-3"><i class="fas fa-brain mr-2"></i> Machine Learning & AI</h3>
+                    <p class="text-gray-300">Supervised/Unsupervised Learning, Regression/Classification/Clustering, Neural Networks, NLP, LLM Fine-tuning, Prompt Engineering, Transformers, Hugging Face, Model Evaluation, Data Preprocessing, Feature Engineering, TensorFlow, PyTorch, scikit-learn</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-semibold text-indigo-400 mb-3"><i class="fas fa-database mr-2"></i> Databases & Tools</h3>
+                    <p class="text-gray-300">MySQL, PostgreSQL, MongoDB, CockroachDB, ElasticSearch, Multi-region Replication, Data Partitioning, Jupyter Notebook, Git/GitHub/GitLab, SOAPUI</p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-semibold text-indigo-400 mb-3"><i class="fas fa-cloud mr-2"></i> Cloud & DevOps</h3>
+                    <p class="text-gray-300">Kubernetes, Ansible, OpenStack, Docker</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- EXPERIENCE SECTION -->
+        <section id="experience" class="mb-20">
+            <h2 class="section-title text-3xl font-bold text-white">Professional Experience</h2>
+            
+            <!-- Job 1: Senior Software Developer, HCLTech -->
+            <div class="bg-gray-800 p-6 rounded-xl shadow-lg mb-6 border-l-4 border-indigo-500">
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-2xl font-semibold text-white">Senior Software Developer</h3>
+                    <span class="text-sm text-gray-400">Dec 2024 - Jul 2025</span>
+                </div>
+                <p class="text-indigo-400 text-lg mb-3">HCLTech | India</p>
+                <ul class="list-disc list-inside space-y-2 text-gray-300 ml-4">
+                    <li>Designed and developed full-stack web application modules using Java, SQL, JSP, and frontend technologies, implementing backend logic to retrieve and process database records and integrating it seamlessly with the frontend interface.</li>
+                    <li>Optimized SQL queries and backend–frontend communication, improving data retrieval speed by 25% and reducing UI load times by 20%.</li>
+                    <li>Streamlined deployment processes with Ansible, reducing provisioning time by 40%, significantly enhancing operational efficiency (Cloud/DevOps).</li>
+                </ul>
+            </div>
+
+            <!-- Job 2: Software Developer, Hewlett Packard Enterprise -->
+            <div class="bg-gray-800 p-6 rounded-xl shadow-lg mb-6 border-l-4 border-indigo-500">
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-2xl font-semibold text-white">Software Developer</h3>
+                    <span class="text-sm text-gray-400">Aug 2023 - Nov 2024</span>
+                </div>
+                <p class="text-indigo-400 text-lg mb-3">Hewlett Packard Enterprise | India</p>
+                <ul class="list-disc list-inside space-y-2 text-gray-300 ml-4">
+                    <li>Backend: Independently designed and implemented end-to-end backend workflows in Java for an HPE internal product, writing SQL queries to fetch and process product data, transforming it into structured XML files, and integrating both REST and SOAP APIs to ingest and transmit this data to the UI. Improved data delivery speed by ~30%, reduced manual intervention by 40%, and increased reliability of the product information pipeline.</li>
+                    <li>Frontend & DevOps: Developed responsive web applications using Angular, JS, and CSS3; automated infrastructure deployment and configuration using Ansible.</li>
+                </ul>
+            </div>
+
+            <!-- Job 3: Frontend Development Intern, Hewlett Packard Enterprise -->
+            <div class="bg-gray-800 p-6 rounded-xl shadow-lg border-l-4 border-indigo-500">
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-2xl font-semibold text-white">Frontend Development Intern</h3>
+                    <span class="text-sm text-gray-400">Jan 2023 - Jul 2023</span>
+                </div>
+                <p class="text-indigo-400 text-lg mb-3">Hewlett Packard Enterprise | India</p>
+                <ul class="list-disc list-inside space-y-2 text-gray-300 ml-4">
+                    <li>Contributed significantly to a Business Intelligence portal, focusing on Web UI development using AngularJS and JavaScript, leading to improved user engagement.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="mb-20">
+            <h2 class="section-title text-3xl font-bold text-white">Key Projects & Research</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <!-- Project 1: Global Weather Insights -->
+                <div class="project-card bg-gray-800 p-6 rounded-xl shadow-lg transition duration-300 hover:shadow-indigo-500/50">
+                    <h3 class="project-title text-2xl font-semibold text-white mb-2">Global Weather Insights <i class="fas fa-globe-americas text-indigo-400 ml-2"></i></h3>
+                    <p class="text-sm text-gray-400 mb-3">Distributed Database System, Full-Stack Development</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-300 ml-4">
+                        <li>Engineered a geo-distributed database system for NOAA data using CockroachDB, featuring multi-region replication and data partitioning for high availability and low latency.</li>
+                        <li>Developed robust backend APIs and an interactive frontend to facilitate fast regional and global weather analytics.</li>
+                        <li>Validated system scalability and reliability under varying load conditions.</li>
+                    </ul>
+                </div>
+
+                <!-- Project 2: Stance Detection on Social Media -->
+                <div class="project-card bg-gray-800 p-6 rounded-xl shadow-lg transition duration-300 hover:shadow-indigo-500/50">
+                    <h3 class="project-title text-2xl font-semibold text-white mb-2">Stance Detection on Social Media <i class="fas fa-robot text-indigo-400 ml-2"></i></h3>
+                    <p class="text-sm text-gray-400 mb-3">Natural Language Processing (NLP), LLMs & Transformers</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-300 ml-4">
+                        <li>Classified stances (favor, against, neutral) on the SemEval-2016 dataset using advanced models: BERT, BERTweet, TwHIN-BERT, and large language models (Phi-3 Mini, Mistral 7B, Qwen 2.5, Llama 3.1).</li>
+                        <li>Achieved a highest classification accuracy of 80% with the Mistral 7B model.</li>
+                        <li>Developed a user-friendly Python-based web UI to input text and display predicted stances with confidence scores.</li>
+                    </ul>
+                </div>
+                
+                <!-- Project 3: Covid-19 Vaccine Stance Detection -->
+                <div class="project-card bg-gray-800 p-6 rounded-xl shadow-lg transition duration-300 hover:shadow-indigo-500/50">
+                    <h3 class="project-title text-2xl font-semibold text-white mb-2">Covid-19 Vaccine Stance Detection <i class="fas fa-syringe text-indigo-400 ml-2"></i></h3>
+                    <p class="text-sm text-gray-400 mb-3">NLP Pipeline & BERT</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-300 ml-4">
+                        <li>Executed a complete NLP pipeline leveraging BERT for classifying vaccine related tweets.</li>
+                        <li>Provided actionable user sentiment insights through the analysis of classified tweets.</li>
+                    </ul>
+                </div>
+                
+                <!-- Publication: Early Stage Detection of Diabetes -->
+                <div class="project-card bg-gray-800 p-6 rounded-xl shadow-lg transition duration-300 hover:shadow-indigo-500/50">
+                    <h3 class="project-title text-2xl font-semibold text-white mb-2">Early Stage Detection of Diabetes <i class="fas fa-file-pdf text-indigo-400 ml-2"></i></h3>
+                    <p class="text-sm text-gray-400 mb-3">Publication & Presentation</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-300 ml-4">
+                        <li>Research paper published in IEEE Xplore. <a href="https://ieeexplore.ieee.org/document/10137480" target="_blank" class="text-indigo-400 hover:text-indigo-300 underline transition">IEEE Xplore</a></li>
+                        <li>Presented the work at the 6th Smart Cities Symposium, IET.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- EDUCATION SECTION -->
+        <section id="education" class="mb-20">
+            <h2 class="section-title text-3xl font-bold text-white">Education & Awards</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <!-- Degree 1: ASU -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg border-l-4 border-purple-500">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-semibold text-white">Master of Science in Computer Science</h3>
+                        <span class="text-sm text-gray-400">Graduating May 2027</span>
+                    </div>
+                    <p class="text-white text-lg">Courses: Semantic Web Mining, Distributed Database Sysytems, information Assurance and Security</p>
+                    <p class="text-indigo-400 text-lg">Arizona State University</p>
+                    <p class="text-gray-300">Arizona, USA</p>
+                </div>
+
+                <!-- Degree 2: Amity University -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg border-l-4 border-purple-500">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-semibold text-white">Bachelor's in Technology in Computer Science</h3>
+                        <span class="text-sm text-gray-400">2019 - 2023</span>
+                    </div>
+                    <p class="text-indigo-400 text-lg">Amity University</p>
+                    <p class="text-gray-300">India | GPA: 8.34/10</p>
+                </div>
+
+                <!-- Honors and Awards -->
+                <div class="md:col-span-2 bg-gray-800 p-6 rounded-xl shadow-lg border-l-4 border-purple-500">
+                    <h3 class="text-xl font-semibold text-white mb-3">Honors and Awards</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-300 ml-4">
+                        <li>Data Challenge Track: 4th Place FIRE 22 Data Science Challenge, 2022.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-500 text-sm">
+            <p>&copy; 2025 Rashi Sharma. All rights reserved. Built with Tailwind CSS.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
